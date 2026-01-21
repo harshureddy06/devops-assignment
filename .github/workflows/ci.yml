@@ -27,3 +27,7 @@ jobs:
           print("Flask app imported successfully")
           EOF
 
+      - name: Build Docker image
+        run: |
+          docker build -t flask-app
+
